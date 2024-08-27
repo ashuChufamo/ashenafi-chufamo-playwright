@@ -1,6 +1,6 @@
 import { test, expect, chromium } from '@playwright/test';
 test('Testing and Scraping a Public Weather Website for Addis Ababa', async ({ page }) => {
-  test.setTimeout(100_000);
+  test.setTimeout(2500_000);
   await page.  goto('https://weather.com/?Goto=Redirected');
   const searchInput = page.locator('input[id="LocationSearch_input"], input[placeholder="Search City or Zip Code"]');
   await searchInput.click();
